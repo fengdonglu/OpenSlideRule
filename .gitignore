@@ -1,0 +1,38 @@
+# 依赖 / Dependencies
+node_modules/
+
+# 构建产物 / Build output
+dist/
+packages/*/dist/
+dist-ssr/
+
+# 本地环境 / Local
+*.local
+.env
+.env.*
+
+# 编辑器 / Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 系统 / OS
+.DS_Store
+Thumbs.db
+
+# 日志 / Logs
+*.log
+npm-debug.log*
+
+# 测试产物 / Test output
+test-results/
+playwright-report/
+
+# 工具本地状态 / Local tool state
+.claude/
+.superpowers/

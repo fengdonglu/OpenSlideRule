@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "circular-e2e",
+  "name": "Circular E2E",
+  "form": "circular",
+  "disc": {
+    "outerRadiusMm": 80,
+    "innerRadiusMm": 10,
+    "sheetSizeMm": 180
+  },
+  "faces": {
+    "front": {
+      "upper": [],
+      "middle": [
+        {
+          "id": "C",
+          "name": "C",
+          "type": "C",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [1, 10],
+            "map": { "kind": "log", "anchor": 1 },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  { "step": 0.02, "level": 3 },
+                  { "step": 0.1, "level": 1 }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 5,
+                "steps": [
+                  { "step": 0.05, "level": 3 },
+                  { "step": 0.1, "level": 2 },
+                  { "step": 0.5, "level": 1 }
+                ]
+              },
+              {
+                "from": 5,
+                "to": 10,
+                "steps": [
+                  { "step": 0.1, "level": 3 },
+                  { "step": 0.5, "level": 2 },
+                  { "step": 1, "level": 1 }
+                ]
+              }
+            ],
+            "labels": [1, 1.5, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          }
+        }
+      ],
+      "lower": [
+        {
+          "id": "D",
+          "name": "D",
+          "type": "D",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [1, 10],
+            "map": { "kind": "log", "anchor": 1 },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  { "step": 0.02, "level": 3 },
+                  { "step": 0.1, "level": 1 }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 5,
+                "steps": [
+                  { "step": 0.05, "level": 3 },
+                  { "step": 0.1, "level": 2 },
+                  { "step": 0.5, "level": 1 }
+                ]
+              },
+              {
+                "from": 5,
+                "to": 10,
+                "steps": [
+                  { "step": 0.1, "level": 3 },
+                  { "step": 0.5, "level": 2 },
+                  { "step": 1, "level": 1 }
+                ]
+              }
+            ],
+            "labels": [1, 1.5, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          }
+        }
+      ]
+    },
+    "back": {
+      "upper": [],
+      "middle": [],
+      "lower": []
+    }
+  }
+}

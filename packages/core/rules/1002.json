@@ -1,0 +1,3516 @@
+{
+  "schemaVersion": 1,
+  "id": "1002",
+  "name": "矢量重对数双面计算尺",
+  "physical": {
+    "faceWidthMm": 304.8,
+    "faceHeightMm": 50.8,
+    "rowCount": {
+      "upper": 4,
+      "middle": 6,
+      "lower": 4
+    },
+    "grooveRowRatio": 0.7,
+    "marginRowRatio": 0.4,
+    "leftGutterMm": 26.1,
+    "rightPanelMm": 19.7,
+    "numeralRatio": 0.6
+  },
+  "faces": {
+    "front": {
+      "upper": [
+        {
+          "id": "sh2",
+          "name": "sh2",
+          "type": "SH2",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              0.095,
+              0.9
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "sinh",
+              "from": 0.1
+            },
+            "intervals": [
+              {
+                "from": 0.095,
+                "to": 0.1,
+                "steps": [
+                  {
+                    "step": 0.001,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 0.1,
+                "to": 0.2,
+                "steps": [
+                  {
+                    "step": 0.001,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 0.2,
+                "to": 0.4,
+                "steps": [
+                  {
+                    "step": 0.002,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 0.4,
+                "to": 0.9,
+                "steps": [
+                  {
+                    "step": 0.005,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "argument",
+            "labels": [
+              0.095,
+              0.1,
+              0.15,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9
+            ],
+            "labelLevel": "keep"
+          },
+          "notes": [
+            ".1→1"
+          ],
+          "numbersBelow": false,
+          "tickEdge": "floor"
+        },
+        {
+          "id": "sh3",
+          "name": "sh3",
+          "type": "SH3",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              0.85,
+              3
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "sinh",
+              "from": 1
+            },
+            "intervals": [
+              {
+                "from": 0.85,
+                "to": 0.9,
+                "steps": [
+                  {
+                    "step": 0.005,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 0.9,
+                "to": 3,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 2
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "argument",
+            "labels": [
+              0.85,
+              0.9,
+              1,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2,
+              2.1,
+              2.2,
+              2.3,
+              2.4,
+              2.5,
+              2.6,
+              2.7,
+              2.8,
+              2.9,
+              3
+            ],
+            "labelLevel": "keep"
+          },
+          "notes": [
+            "1→10"
+          ],
+          "numbersBelow": false,
+          "tickEdge": "roof"
+        },
+        {
+          "id": "K",
+          "name": "K",
+          "type": "K",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1,
+              1000
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1,
+              "normalize": true
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 3,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 3,
+                "to": 6,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 6,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 2
+                  }
+                ]
+              }
+            ],
+            "decades": 3,
+            "labels": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              20,
+              30,
+              40,
+              50,
+              60,
+              70,
+              80,
+              90,
+              100,
+              200,
+              300,
+              400,
+              500,
+              600,
+              700,
+              800,
+              900,
+              1000
+            ]
+          }
+        },
+        {
+          "id": "A",
+          "name": "A",
+          "type": "A",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1,
+              100
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1,
+              "normalize": true
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 5,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 5,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  }
+                ]
+              }
+            ],
+            "decades": 2,
+            "labels": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              20,
+              30,
+              40,
+              50,
+              60,
+              70,
+              80,
+              90,
+              100
+            ],
+            "marks": [
+              {
+                "value": 3.141592653589793,
+                "label": "π"
+              }
+            ]
+          }
+        }
+      ],
+      "middle": [
+        {
+          "id": "B",
+          "name": "B",
+          "type": "B",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1,
+              100
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1,
+              "normalize": true
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 5,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 5,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  }
+                ]
+              }
+            ],
+            "decades": 2,
+            "labels": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              20,
+              30,
+              40,
+              50,
+              60,
+              70,
+              80,
+              90,
+              100
+            ],
+            "marks": [
+              {
+                "value": 3.141592653589793,
+                "label": "π"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sin2",
+          "name": "sin2",
+          "type": "SIN2",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              5.5,
+              90
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "sin",
+              "from": 0.1
+            },
+            "intervals": [
+              {
+                "from": 5.5,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 10,
+                "to": 20,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 20,
+                "to": 30,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 2
+                  },
+                  {
+                    "step": 5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 30,
+                "to": 60,
+                "steps": [
+                  {
+                    "step": 0.5,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 2
+                  },
+                  {
+                    "step": 5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 60,
+                "to": 80,
+                "steps": [
+                  {
+                    "step": 1,
+                    "level": 3
+                  },
+                  {
+                    "step": 5,
+                    "level": 2
+                  },
+                  {
+                    "step": 10,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 80,
+                "to": 90,
+                "steps": [
+                  {
+                    "step": 5,
+                    "level": 3
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "degree",
+            "labels": [
+              5.5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              15,
+              20,
+              25,
+              30,
+              40,
+              50,
+              60,
+              70,
+              80,
+              90
+            ]
+          },
+          "sharedLabels": [
+            {
+              "id": "cos2",
+              "name": "cos2",
+              "orientation": "decreasing",
+              "format": "degree"
+            }
+          ],
+          "notes": [
+            ".1→1",
+            "√1-(.1C)²"
+          ]
+        },
+        {
+          "id": "H'2",
+          "name": "H'2",
+          "type": "H2P",
+          "orientation": "decreasing",
+          "calculation": {
+            "domain": [
+              0,
+              0.995
+            ],
+            "map": {
+              "kind": "valueFn",
+              "fn": "sech",
+              "from": 0.1
+            },
+            "intervals": [
+              {
+                "from": 0.05,
+                "to": 0.1,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 0.1,
+                "to": 0.3,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 0.3,
+                "to": 0.4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 0.4,
+                "to": 0.6,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 0.6,
+                "to": 0.8,
+                "steps": [
+                  {
+                    "step": 0.005,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 0.8,
+                "to": 0.9,
+                "steps": [
+                  {
+                    "step": 0.002,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 0.9,
+                "to": 0.95,
+                "steps": [
+                  {
+                    "step": 0.001,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 0.95,
+                "to": 0.98,
+                "steps": [
+                  {
+                    "step": 0.0005,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 0.98,
+                "to": 0.99,
+                "steps": [
+                  {
+                    "step": 0.0002,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 0.99,
+                "to": 0.9951,
+                "steps": [
+                  {
+                    "step": 0.0001,
+                    "level": 3
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "sechZero",
+            "labels": [
+              0.995,
+              0.99,
+              0.98,
+              0.97,
+              0.96,
+              0.95,
+              0.94,
+              0.93,
+              0.92,
+              0.91,
+              0.9,
+              0.8,
+              0.7,
+              0.6,
+              0.5,
+              0.4,
+              0.3,
+              0.2,
+              0.1,
+              0
+            ]
+          },
+          "notes": [
+            "√1-(.1C)²"
+          ]
+        },
+        {
+          "id": "tg2",
+          "name": "tg2",
+          "type": "TG2",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              5.5,
+              45
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "tan",
+              "from": 0.1
+            },
+            "intervals": [
+              {
+                "from": 5.5,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 10,
+                "to": 30,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 30,
+                "to": 45,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 2
+                  },
+                  {
+                    "step": 5,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "degree",
+            "labels": [
+              5.5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              15,
+              20,
+              25,
+              30,
+              35,
+              40,
+              45
+            ]
+          },
+          "sharedLabels": [
+            {
+              "id": "ctg2",
+              "name": "ctg2",
+              "orientation": "decreasing",
+              "format": "degree"
+            }
+          ],
+          "notes": [
+            ".1→1"
+          ],
+          "numbersBelow": false,
+          "tickEdge": "floor"
+        },
+        {
+          "id": "tg3",
+          "name": "tg3",
+          "type": "TG3",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              45,
+              84.5
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "tan",
+              "from": 1
+            },
+            "intervals": [
+              {
+                "from": 45,
+                "to": 60,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 2
+                  },
+                  {
+                    "step": 5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 60,
+                "to": 80,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 80,
+                "to": 84.5,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "degree",
+            "labels": [
+              45,
+              50,
+              55,
+              60,
+              65,
+              70,
+              75,
+              80,
+              81,
+              82,
+              83,
+              84,
+              84.5
+            ]
+          },
+          "sharedLabels": [
+            {
+              "id": "ctg3",
+              "name": "ctg3",
+              "orientation": "decreasing",
+              "format": "degree"
+            }
+          ],
+          "notes": [
+            "1→10"
+          ],
+          "numbersBelow": false,
+          "tickEdge": "roof"
+        },
+        {
+          "id": "C",
+          "name": "C",
+          "type": "C",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1,
+              10
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              1,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "marks": [
+              {
+                "value": 3.141592653589793,
+                "label": "π"
+              }
+            ]
+          }
+        }
+      ],
+      "lower": [
+        {
+          "id": "D",
+          "name": "D",
+          "type": "D",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1,
+              10
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              1,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "marks": [
+              {
+                "value": 3.141592653589793,
+                "label": "π"
+              }
+            ]
+          }
+        },
+        {
+          "id": "DI",
+          "name": "DI",
+          "type": "DI",
+          "orientation": "decreasing",
+          "calculation": {
+            "domain": [
+              1,
+              10
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "decreasing": true
+          }
+        },
+        {
+          "id": "lg",
+          "name": "lg",
+          "type": "L",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              0,
+              1
+            ],
+            "map": {
+              "kind": "linear"
+            },
+            "intervals": [
+              {
+                "from": 0,
+                "to": 1,
+                "steps": [
+                  {
+                    "step": 0.002,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "linearFraction",
+            "labels": [
+              0,
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1
+            ]
+          },
+          "numbersBelow": true
+        },
+        {
+          "id": "th2",
+          "name": "th2",
+          "type": "TH2",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              0.095,
+              3
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "tanh",
+              "from": 0.1
+            },
+            "intervals": [
+              {
+                "from": 0.095,
+                "to": 0.2,
+                "steps": [
+                  {
+                    "step": 0.001,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 0.2,
+                "to": 0.4,
+                "steps": [
+                  {
+                    "step": 0.002,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 0.4,
+                "to": 0.7,
+                "steps": [
+                  {
+                    "step": 0.005,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 0.7,
+                "to": 1,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 1,
+                "to": 1.5,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 1.5,
+                "to": 3,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "argument",
+            "labels": [
+              0.095,
+              0.1,
+              0.15,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1,
+              1.5,
+              2,
+              3
+            ],
+            "marks": [
+              {
+                "value": "infinity",
+                "label": "∞"
+              }
+            ],
+            "labelLevel": "keep"
+          },
+          "notes": [
+            ".1→1"
+          ],
+          "numbersBelow": true
+        }
+      ]
+    },
+    "back": {
+      "upper": [
+        {
+          "id": "ln1I",
+          "name": "ln1I",
+          "type": "LN1I",
+          "orientation": "decreasing",
+          "calculation": {
+            "domain": [
+              1.0095,
+              1.11
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "ln",
+              "from": 0.01
+            },
+            "intervals": [
+              {
+                "from": 1.0095,
+                "to": 1.02,
+                "steps": [
+                  {
+                    "step": 0.0001,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.0005,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.02,
+                "to": 1.05,
+                "steps": [
+                  {
+                    "step": 0.0002,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.05,
+                "to": 1.11,
+                "steps": [
+                  {
+                    "step": 0.0005,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "read": {
+              "kind": "reciprocal",
+              "scale": 1
+            },
+            "labels": [
+              {
+                "value": 0.9905,
+                "text": ".9905"
+              },
+              {
+                "value": 0.99,
+                "text": ".99"
+              },
+              {
+                "value": 0.985,
+                "text": ".985"
+              },
+              {
+                "value": 0.98,
+                "text": ".98"
+              },
+              {
+                "value": 0.97,
+                "text": ".97"
+              },
+              {
+                "value": 0.96,
+                "text": ".96"
+              },
+              {
+                "value": 0.95,
+                "text": ".95"
+              },
+              {
+                "value": 0.94,
+                "text": ".94"
+              },
+              {
+                "value": 0.93,
+                "text": ".93"
+              },
+              {
+                "value": 0.92,
+                "text": ".92"
+              },
+              {
+                "value": 0.91,
+                "text": ".91"
+              },
+              {
+                "value": 0.9,
+                "text": ".9"
+              }
+            ]
+          },
+          "notes": [
+            ".01→.1"
+          ]
+        },
+        {
+          "id": "ln2I",
+          "name": "ln2I",
+          "type": "LN2I",
+          "orientation": "decreasing",
+          "calculation": {
+            "domain": [
+              1.1,
+              2.9
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "ln",
+              "from": 0.1
+            },
+            "intervals": [
+              {
+                "from": 1.1,
+                "to": 1.11,
+                "steps": [
+                  {
+                    "step": 0.0005,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.11,
+                "to": 1.2,
+                "steps": [
+                  {
+                    "step": 0.001,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.2,
+                "to": 1.4,
+                "steps": [
+                  {
+                    "step": 0.002,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.4,
+                "to": 1.8,
+                "steps": [
+                  {
+                    "step": 0.005,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.02,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.8,
+                "to": 2.5,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2.5,
+                "to": 2.9,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              }
+            ],
+            "read": {
+              "kind": "reciprocal",
+              "scale": 1
+            },
+            "labels": [
+              {
+                "value": 0.91,
+                "text": ".91"
+              },
+              {
+                "value": 0.9,
+                "text": ".9"
+              },
+              {
+                "value": 0.85,
+                "text": ".85"
+              },
+              {
+                "value": 0.8,
+                "text": ".8"
+              },
+              {
+                "value": 0.7,
+                "text": ".7"
+              },
+              {
+                "value": 0.6,
+                "text": ".6"
+              },
+              {
+                "value": 0.5,
+                "text": ".5"
+              },
+              {
+                "value": 0.4,
+                "text": ".4"
+              },
+              {
+                "value": 0.36787944117144233,
+                "text": "e-1"
+              },
+              {
+                "value": 0.35,
+                "text": ".35"
+              }
+            ]
+          },
+          "notes": [
+            ".1→1"
+          ]
+        },
+        {
+          "id": "ln3I",
+          "name": "ln3I",
+          "type": "LN3I",
+          "orientation": "decreasing",
+          "calculation": {
+            "domain": [
+              2.5,
+              20000
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "ln",
+              "from": 1
+            },
+            "intervals": [
+              {
+                "from": 2.5,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 6,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 6,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 10,
+                "to": 15,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 15,
+                "to": 30,
+                "steps": [
+                  {
+                    "step": 0.5,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 2
+                  },
+                  {
+                    "step": 5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 30,
+                "to": 50,
+                "steps": [
+                  {
+                    "step": 1,
+                    "level": 3
+                  },
+                  {
+                    "step": 5,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 50,
+                "to": 100,
+                "steps": [
+                  {
+                    "step": 2,
+                    "level": 3
+                  },
+                  {
+                    "step": 10,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 100,
+                "to": 200,
+                "steps": [
+                  {
+                    "step": 5,
+                    "level": 3
+                  },
+                  {
+                    "step": 10,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 200,
+                "to": 500,
+                "steps": [
+                  {
+                    "step": 10,
+                    "level": 3
+                  },
+                  {
+                    "step": 50,
+                    "level": 2
+                  },
+                  {
+                    "step": 100,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 500,
+                "to": 1000,
+                "steps": [
+                  {
+                    "step": 50,
+                    "level": 3
+                  },
+                  {
+                    "step": 100,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 1000,
+                "to": 2000,
+                "steps": [
+                  {
+                    "step": 100,
+                    "level": 3
+                  },
+                  {
+                    "step": 500,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 2000,
+                "to": 5000,
+                "steps": [
+                  {
+                    "step": 200,
+                    "level": 3
+                  },
+                  {
+                    "step": 1000,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 5000,
+                "to": 10000,
+                "steps": [
+                  {
+                    "step": 500,
+                    "level": 3
+                  },
+                  {
+                    "step": 1000,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 10000,
+                "to": 20000,
+                "steps": [
+                  {
+                    "step": 1000,
+                    "level": 3
+                  },
+                  {
+                    "step": 5000,
+                    "level": 2
+                  }
+                ]
+              }
+            ],
+            "read": {
+              "kind": "reciprocal",
+              "scale": 1
+            },
+            "labels": [
+              {
+                "value": 0.4,
+                "text": ".4"
+              },
+              {
+                "value": 0.3,
+                "text": ".3"
+              },
+              {
+                "value": 0.2,
+                "text": ".2"
+              },
+              {
+                "value": 0.1,
+                "text": ".1"
+              },
+              {
+                "value": 0.08,
+                "text": ".08"
+              },
+              {
+                "value": 0.06,
+                "text": ".06"
+              },
+              {
+                "value": 0.04,
+                "text": ".04"
+              },
+              {
+                "value": 0.03,
+                "text": ".03"
+              },
+              {
+                "value": 0.02,
+                "text": ".02"
+              },
+              {
+                "value": 0.01,
+                "text": ".01"
+              },
+              {
+                "value": 0.005,
+                "text": ".005"
+              },
+              {
+                "value": 0.002,
+                "text": ".002"
+              },
+              {
+                "value": 0.001,
+                "text": ".001"
+              },
+              {
+                "value": 0.0005,
+                "text": ".0005"
+              },
+              {
+                "value": 0.0002,
+                "text": ".0002"
+              },
+              {
+                "value": 0.0001,
+                "text": ".0001"
+              },
+              {
+                "value": 0.00005,
+                "text": ".00005"
+              }
+            ]
+          },
+          "notes": [
+            "1→10"
+          ]
+        },
+        {
+          "id": "DF",
+          "name": "DF",
+          "type": "DF",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              3,
+              33
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 3.1622776601683795
+            },
+            "intervals": [
+              {
+                "from": 3,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 10,
+                "to": 20,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 20,
+                "to": 33,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "folded",
+            "labels": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              30,
+              33
+            ],
+            "marks": [
+              {
+                "value": 3.141592653589793,
+                "label": "π"
+              },
+              {
+                "value": 31.41592653589793,
+                "label": "π"
+              }
+            ]
+          }
+        }
+      ],
+      "middle": [
+        {
+          "id": "CF",
+          "name": "CF",
+          "type": "CF",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              3.1622776601683795,
+              31.622776601683796
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 3.1622776601683795
+            },
+            "intervals": [
+              {
+                "from": 3.1622776601683795,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 10,
+                "to": 20,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 20,
+                "to": 30,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 30,
+                "to": 31.622776601683796,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "folded",
+            "labels": [
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              30
+            ],
+            "marks": [
+              {
+                "value": 3.1622776601683795,
+                "label": "√10"
+              },
+              {
+                "value": 31.622776601683796,
+                "label": "√10"
+              }
+            ]
+          }
+        },
+        {
+          "id": "CIF",
+          "name": "CIF",
+          "type": "CIF",
+          "orientation": "decreasing",
+          "calculation": {
+            "domain": [
+              3.1622776601683795,
+              31.622776601683796
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 3.1622776601683795
+            },
+            "intervals": [
+              {
+                "from": 3.1622776601683795,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 10,
+                "to": 20,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  }
+                ]
+              },
+              {
+                "from": 20,
+                "to": 30,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 30,
+                "to": 31.622776601683796,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  }
+                ]
+              }
+            ],
+            "read": {
+              "kind": "reciprocal",
+              "scale": 10
+            },
+            "labels": [
+              3.3,
+              3,
+              2,
+              1.9,
+              1.8,
+              1.7,
+              1.6,
+              1.5,
+              1.4,
+              1.3,
+              1.2,
+              1.1,
+              1,
+              0.9,
+              0.8,
+              0.7,
+              0.6,
+              0.5,
+              0.4,
+              0.3
+            ]
+          }
+        },
+        {
+          "id": "H2",
+          "name": "H2",
+          "type": "H2",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1.005,
+              1.45
+            ],
+            "map": {
+              "kind": "valueFn",
+              "fn": "cosh",
+              "from": 0.1
+            },
+            "intervals": [
+              {
+                "from": 1.005,
+                "to": 1.008,
+                "steps": [
+                  {
+                    "step": 0.0001,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.0005,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.008,
+                "to": 1.01,
+                "steps": [
+                  {
+                    "step": 0.0002,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.01,
+                "to": 1.02,
+                "steps": [
+                  {
+                    "step": 0.0002,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.02,
+                "to": 1.05,
+                "steps": [
+                  {
+                    "step": 0.0005,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.05,
+                "to": 1.1,
+                "steps": [
+                  {
+                    "step": 0.001,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.1,
+                "to": 1.2,
+                "steps": [
+                  {
+                    "step": 0.002,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.2,
+                "to": 1.4,
+                "steps": [
+                  {
+                    "step": 0.005,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.4,
+                "to": 1.45,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labelFormat": {
+              "kind": "number",
+              "decimals": 3
+            },
+            "labels": [
+              1.005,
+              1.008,
+              1.01,
+              1.02,
+              1.03,
+              1.04,
+              1.05,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.45
+            ]
+          },
+          "notes": [
+            "√1+(.1C)²"
+          ]
+        },
+        {
+          "id": "H3",
+          "name": "H3",
+          "type": "H3",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1.4,
+              10.5
+            ],
+            "map": {
+              "kind": "valueFn",
+              "fn": "cosh",
+              "from": 1
+            },
+            "intervals": [
+              {
+                "from": 1.4,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 10,
+                "to": 10.5,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labelFormat": {
+              "kind": "number",
+              "decimals": 1
+            },
+            "labels": [
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              10.5
+            ]
+          },
+          "notes": [
+            "√1+C²"
+          ]
+        },
+        {
+          "id": "CI",
+          "name": "CI",
+          "type": "CI",
+          "orientation": "decreasing",
+          "calculation": {
+            "domain": [
+              1,
+              10
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "decreasing": true
+          }
+        },
+        {
+          "id": "C",
+          "name": "C",
+          "type": "C",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1,
+              10
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              1,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "marks": [
+              {
+                "value": 3.141592653589793,
+                "label": "π"
+              }
+            ]
+          }
+        }
+      ],
+      "lower": [
+        {
+          "id": "D",
+          "name": "D",
+          "type": "D",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1,
+              10
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              1,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8,
+              1.9,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "marks": [
+              {
+                "value": 3.141592653589793,
+                "label": "π"
+              }
+            ]
+          }
+        },
+        {
+          "id": "ln3",
+          "name": "ln3",
+          "type": "LN3",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              2.5,
+              20000
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "ln",
+              "from": 1
+            },
+            "intervals": [
+              {
+                "from": 2.5,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 6,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 6,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 10,
+                "to": 15,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 15,
+                "to": 30,
+                "steps": [
+                  {
+                    "step": 0.5,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 2
+                  },
+                  {
+                    "step": 5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 30,
+                "to": 50,
+                "steps": [
+                  {
+                    "step": 1,
+                    "level": 3
+                  },
+                  {
+                    "step": 5,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 50,
+                "to": 100,
+                "steps": [
+                  {
+                    "step": 2,
+                    "level": 3
+                  },
+                  {
+                    "step": 10,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 100,
+                "to": 200,
+                "steps": [
+                  {
+                    "step": 5,
+                    "level": 3
+                  },
+                  {
+                    "step": 10,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 200,
+                "to": 500,
+                "steps": [
+                  {
+                    "step": 10,
+                    "level": 3
+                  },
+                  {
+                    "step": 50,
+                    "level": 2
+                  },
+                  {
+                    "step": 100,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 500,
+                "to": 1000,
+                "steps": [
+                  {
+                    "step": 50,
+                    "level": 3
+                  },
+                  {
+                    "step": 100,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 1000,
+                "to": 2000,
+                "steps": [
+                  {
+                    "step": 100,
+                    "level": 3
+                  },
+                  {
+                    "step": 500,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 2000,
+                "to": 5000,
+                "steps": [
+                  {
+                    "step": 200,
+                    "level": 3
+                  },
+                  {
+                    "step": 1000,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 5000,
+                "to": 10000,
+                "steps": [
+                  {
+                    "step": 500,
+                    "level": 3
+                  },
+                  {
+                    "step": 1000,
+                    "level": 2
+                  }
+                ]
+              },
+              {
+                "from": 10000,
+                "to": 20000,
+                "steps": [
+                  {
+                    "step": 1000,
+                    "level": 3
+                  },
+                  {
+                    "step": 5000,
+                    "level": 2
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              {
+                "value": 2.5,
+                "text": "2.5"
+              },
+              {
+                "value": 2.718281828459045,
+                "text": "e"
+              },
+              {
+                "value": 3,
+                "text": "3"
+              },
+              {
+                "value": 4,
+                "text": "4"
+              },
+              {
+                "value": 5,
+                "text": "5"
+              },
+              {
+                "value": 6,
+                "text": "6"
+              },
+              {
+                "value": 7,
+                "text": "7"
+              },
+              {
+                "value": 8,
+                "text": "8"
+              },
+              {
+                "value": 9,
+                "text": "9"
+              },
+              {
+                "value": 10,
+                "text": "10"
+              },
+              {
+                "value": 15,
+                "text": "15"
+              },
+              {
+                "value": 20,
+                "text": "20"
+              },
+              {
+                "value": 30,
+                "text": "30"
+              },
+              {
+                "value": 40,
+                "text": "40"
+              },
+              {
+                "value": 50,
+                "text": "50"
+              },
+              {
+                "value": 100,
+                "text": "100"
+              },
+              {
+                "value": 200,
+                "text": "200"
+              },
+              {
+                "value": 500,
+                "text": "500"
+              },
+              {
+                "value": 1000,
+                "text": "1000"
+              },
+              {
+                "value": 2000,
+                "text": "2000"
+              },
+              {
+                "value": 5000,
+                "text": "5000"
+              },
+              {
+                "value": 10000,
+                "text": "10000"
+              },
+              {
+                "value": 20000,
+                "text": "20000"
+              }
+            ]
+          },
+          "notes": [
+            "1→10"
+          ]
+        },
+        {
+          "id": "ln2",
+          "name": "ln2",
+          "type": "LN2",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1.1,
+              2.9
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "ln",
+              "from": 0.1
+            },
+            "intervals": [
+              {
+                "from": 1.1,
+                "to": 1.11,
+                "steps": [
+                  {
+                    "step": 0.0005,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.11,
+                "to": 1.2,
+                "steps": [
+                  {
+                    "step": 0.001,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.2,
+                "to": 1.4,
+                "steps": [
+                  {
+                    "step": 0.002,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.4,
+                "to": 1.8,
+                "steps": [
+                  {
+                    "step": 0.005,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.02,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.8,
+                "to": 2.5,
+                "steps": [
+                  {
+                    "step": 0.01,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.05,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2.5,
+                "to": 2.9,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              {
+                "value": 1.1,
+                "text": "1.10"
+              },
+              {
+                "value": 1.11,
+                "text": "1.11"
+              },
+              {
+                "value": 1.15,
+                "text": "1.15"
+              },
+              {
+                "value": 1.2,
+                "text": "1.2"
+              },
+              {
+                "value": 1.3,
+                "text": "1.3"
+              },
+              {
+                "value": 1.4,
+                "text": "1.4"
+              },
+              {
+                "value": 1.5,
+                "text": "1.5"
+              },
+              {
+                "value": 1.6,
+                "text": "1.6"
+              },
+              {
+                "value": 1.7,
+                "text": "1.7"
+              },
+              {
+                "value": 1.8,
+                "text": "1.8"
+              },
+              {
+                "value": 1.9,
+                "text": "1.9"
+              },
+              {
+                "value": 2,
+                "text": "2"
+              },
+              {
+                "value": 2.5,
+                "text": "2.5"
+              },
+              {
+                "value": 2.718281828459045,
+                "text": "e"
+              },
+              {
+                "value": 2.9,
+                "text": "2.9"
+              }
+            ]
+          },
+          "notes": [
+            ".1→1"
+          ]
+        },
+        {
+          "id": "ln1",
+          "name": "ln1",
+          "type": "LN1",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1.0095,
+              1.11
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "ln",
+              "from": 0.01
+            },
+            "intervals": [
+              {
+                "from": 1.0095,
+                "to": 1.02,
+                "steps": [
+                  {
+                    "step": 0.0001,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.0005,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.02,
+                "to": 1.05,
+                "steps": [
+                  {
+                    "step": 0.0002,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.05,
+                "to": 1.11,
+                "steps": [
+                  {
+                    "step": 0.0005,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.001,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.005,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              {
+                "value": 1.0095,
+                "text": "1.0095"
+              },
+              {
+                "value": 1.01,
+                "text": "1.01"
+              },
+              {
+                "value": 1.015,
+                "text": "1.015"
+              },
+              {
+                "value": 1.02,
+                "text": "1.02"
+              },
+              {
+                "value": 1.03,
+                "text": "1.03"
+              },
+              {
+                "value": 1.04,
+                "text": "1.04"
+              },
+              {
+                "value": 1.05,
+                "text": "1.05"
+              },
+              {
+                "value": 1.06,
+                "text": "1.06"
+              },
+              {
+                "value": 1.07,
+                "text": "1.07"
+              },
+              {
+                "value": 1.08,
+                "text": "1.08"
+              },
+              {
+                "value": 1.09,
+                "text": "1.09"
+              },
+              {
+                "value": 1.1,
+                "text": "1.10"
+              },
+              {
+                "value": 1.11,
+                "text": "1.11"
+              }
+            ]
+          },
+          "notes": [
+            ".01→.1"
+          ]
+        }
+      ]
+    }
+  }
+}

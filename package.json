@@ -1,0 +1,53 @@
+{
+  "name": "open-slide-rule",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A web simulator and visual authoring tool for slide rules",
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengdonglu/OpenSlideRule.git"
+  },
+  "homepage": "https://fengdonglu.github.io/OpenSlideRule/",
+  "bugs": {
+    "url": "https://github.com/fengdonglu/OpenSlideRule/issues"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @slide-rule/simulator",
+    "build": "npm run build -w @slide-rule/simulator && npm run build -w @slide-rule/generator && npm run typecheck:e2e",
+    "preview": "npm run preview -w @slide-rule/simulator",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck:e2e": "tsc --noEmit -p e2e/tsconfig.json",
+    "e2e": "playwright test",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"packages/**/*.{ts,vue}\""
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "pinia": "^4.0.3",
+    "vue": "^3.5.42",
+    "vue-i18n": "^11.4.10"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/eslint-config-typescript": "^14.9.0",
+    "@vue/test-utils": "^2.5.1",
+    "eslint": "^10.10.0",
+    "eslint-plugin-vue": "^10.11.0",
+    "jsdom": "^29.1.1",
+    "playwright-core": "^1.63.0",
+    "prettier": "^3.9.7",
+    "typescript": "^5.9.3",
+    "vite": "^8.2.2",
+    "vitest": "^5.0.1",
+    "vue-tsc": "^3.3.11"
+  }
+}

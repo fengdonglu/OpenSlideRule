@@ -1,0 +1,892 @@
+{
+  "schemaVersion": 1,
+  "id": "57",
+  "name": "五七型便携计算尺",
+  "physical": {
+    "faceWidthMm": 152.4,
+    "faceHeightMm": 25.4,
+    "rowCount": {
+      "upper": 2,
+      "middle": 4,
+      "lower": 3
+    },
+    "grooveRowRatio": 0.7,
+    "marginRowRatio": 0.4,
+    "leftGutterMm": 13.05,
+    "rightPanelMm": 9.85,
+    "numeralRatio": 0.6
+  },
+  "faces": {
+    "front": {
+      "upper": [
+        {
+          "id": "K",
+          "name": "K",
+          "type": "K",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1,
+              1000
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1,
+              "normalize": true
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 4,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 4,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "decades": 3,
+            "labels": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              20,
+              30,
+              40,
+              50,
+              60,
+              70,
+              80,
+              90,
+              100,
+              200,
+              300,
+              400,
+              500,
+              600,
+              700,
+              800,
+              900,
+              1000
+            ]
+          },
+          "notes": [
+            "x³"
+          ]
+        },
+        {
+          "id": "A",
+          "name": "A",
+          "type": "A",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1,
+              100
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1,
+              "normalize": true
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 5,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 5,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.2,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "decades": 2,
+            "labels": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              10,
+              20,
+              30,
+              40,
+              50,
+              100
+            ],
+            "marks": [
+              {
+                "value": 3.141592653589793,
+                "label": "π"
+              }
+            ]
+          },
+          "notes": [
+            "x²"
+          ]
+        }
+      ],
+      "middle": [
+        {
+          "id": "S",
+          "name": "S",
+          "type": "S",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              5.74,
+              90
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "sin",
+              "from": 0.1
+            },
+            "intervals": [
+              {
+                "from": 5.74,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.16666666666666666,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 10,
+                "to": 15,
+                "steps": [
+                  {
+                    "step": 0.16666666666666666,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 15,
+                "to": 20,
+                "steps": [
+                  {
+                    "step": 0.25,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 20,
+                "to": 30,
+                "steps": [
+                  {
+                    "step": 0.5,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 30,
+                "to": 45,
+                "steps": [
+                  {
+                    "step": 0.5,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 45,
+                "to": 60,
+                "steps": [
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 60,
+                "to": 90,
+                "steps": [
+                  {
+                    "step": 2,
+                    "level": 2
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "degreeBare",
+            "labels": [
+              6,
+              7,
+              8,
+              9,
+              10,
+              15,
+              20,
+              30,
+              40,
+              50,
+              60,
+              90
+            ]
+          },
+          "sharedLabels": [
+            {
+              "id": "cos",
+              "name": "cos",
+              "orientation": "decreasing",
+              "format": "bare"
+            }
+          ],
+          "notes": [
+            [
+              {
+                "text": "∠sin "
+              },
+              {
+                "text": "cos",
+                "red": true
+              }
+            ]
+          ]
+        },
+        {
+          "id": "ST",
+          "name": "ST",
+          "type": "ST",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              0.573,
+              5.74
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "sin",
+              "from": 0.01
+            },
+            "intervals": [
+              {
+                "from": 0.573,
+                "to": 1.5,
+                "steps": [
+                  {
+                    "step": 0.08333333333333333,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.25,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 1.5,
+                "to": 5.74,
+                "steps": [
+                  {
+                    "step": 0.16666666666666666,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "degreeMinute",
+            "labels": [
+              0.5833333333333334,
+              0.6666666666666666,
+              0.8333333333333334,
+              1,
+              1.5,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          "notes": [
+            "∠arc"
+          ]
+        },
+        {
+          "id": "T",
+          "name": "T",
+          "type": "T",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              5.71,
+              45
+            ],
+            "map": {
+              "kind": "fn",
+              "fn": "tan",
+              "from": 0.1
+            },
+            "intervals": [
+              {
+                "from": 5.71,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.16666666666666666,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 10,
+                "to": 15,
+                "steps": [
+                  {
+                    "step": 0.16666666666666666,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 15,
+                "to": 20,
+                "steps": [
+                  {
+                    "step": 0.3333333333333333,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 20,
+                "to": 30,
+                "steps": [
+                  {
+                    "step": 0.3333333333333333,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 30,
+                "to": 45,
+                "steps": [
+                  {
+                    "step": 0.3333333333333333,
+                    "level": 3
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "degreeBare",
+            "labels": [
+              6,
+              7,
+              8,
+              9,
+              10,
+              15,
+              20,
+              30,
+              40,
+              45
+            ]
+          },
+          "sharedLabels": [
+            {
+              "id": "ctg",
+              "name": "ctg",
+              "orientation": "decreasing",
+              "format": "bare"
+            }
+          ],
+          "notes": [
+            [
+              {
+                "text": "∠tg "
+              },
+              {
+                "text": "ctg",
+                "red": true
+              }
+            ]
+          ]
+        },
+        {
+          "id": "C",
+          "name": "C",
+          "type": "C",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1,
+              10
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 5,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 5,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              1,
+              1.5,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "marks": [
+              {
+                "value": 3.141592653589793,
+                "label": "π"
+              }
+            ]
+          },
+          "notes": [
+            "x"
+          ]
+        }
+      ],
+      "lower": [
+        {
+          "id": "D",
+          "name": "D",
+          "type": "D",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              1,
+              10
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 5,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 5,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              1,
+              1.5,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "marks": [
+              {
+                "value": 3.141592653589793,
+                "label": "π"
+              }
+            ]
+          },
+          "notes": [
+            "x"
+          ]
+        },
+        {
+          "id": "DI",
+          "name": "DI",
+          "type": "DI",
+          "orientation": "decreasing",
+          "calculation": {
+            "domain": [
+              1,
+              10
+            ],
+            "map": {
+              "kind": "log",
+              "anchor": 1
+            },
+            "intervals": [
+              {
+                "from": 1,
+                "to": 2,
+                "steps": [
+                  {
+                    "step": 0.02,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 2,
+                "to": 5,
+                "steps": [
+                  {
+                    "step": 0.05,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.1,
+                    "level": 2
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 1
+                  }
+                ]
+              },
+              {
+                "from": 5,
+                "to": 10,
+                "steps": [
+                  {
+                    "step": 0.1,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.5,
+                    "level": 2
+                  },
+                  {
+                    "step": 1,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labels": [
+              1,
+              1.5,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "marks": [
+              {
+                "value": 3.141592653589793,
+                "label": "π"
+              }
+            ],
+            "decreasing": true
+          },
+          "notes": [
+            [
+              {
+                "text": "1/x",
+                "red": true
+              }
+            ]
+          ]
+        },
+        {
+          "id": "L",
+          "name": "L",
+          "type": "L",
+          "orientation": "increasing",
+          "calculation": {
+            "domain": [
+              0,
+              1
+            ],
+            "map": {
+              "kind": "linear"
+            },
+            "intervals": [
+              {
+                "from": 0,
+                "to": 1,
+                "steps": [
+                  {
+                    "step": 0.005,
+                    "level": 3
+                  },
+                  {
+                    "step": 0.01,
+                    "level": 1
+                  }
+                ]
+              }
+            ],
+            "labelFormat": "linearFraction",
+            "labels": [
+              0,
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1
+            ]
+          },
+          "notes": [
+            "Lg x"
+          ],
+          "numbersBelow": true
+        }
+      ]
+    },
+    "back": {
+      "upper": [],
+      "middle": [],
+      "lower": []
+    }
+  }
+}

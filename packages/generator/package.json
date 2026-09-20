@@ -1,0 +1,14 @@
+{
+  "name": "@slide-rule/generator",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "bin": { "slide-rule-gen": "./dist/bin.js" },
+  "scripts": {
+    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "gen": "node dist/bin.js"
+  },
+  "dependencies": { "@slide-rule/core": "*" }
+}

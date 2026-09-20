@@ -1,0 +1,42 @@
+:root {
+  --primary-500: #3b82f6;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-900: #111827;
+
+  /* Application-chrome theme tokens. `utils/theme.ts` overwrites these on the
+     root element from the selected theme; the values here are the plastic
+     fallback so the UI is styled before the app mounts. */
+  --ui-page: #f9fafb;
+  --ui-surface: #ffffff;
+  --ui-surface-muted: #f3f4f6;
+  --ui-border: #d1d5db;
+  --ui-text: #111827;
+  --ui-text-muted: #6b7280;
+  --ui-accent: #2563eb;
+  --ui-accent-text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* Reserve the vertical scrollbar so the rule height cannot oscillate */
+  scrollbar-gutter: stable;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--ui-page);
+  color: var(--ui-text);
+}
+
+#app {
+  min-height: 100vh;
+}

@@ -1,0 +1,11 @@
+dist
+packages/**/dist
+node_modules
+coverage
+package-lock.json
+docs
+tools
+Bak
+*.jpg
+*.jpeg
+*.png

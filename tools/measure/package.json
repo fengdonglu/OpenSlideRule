@@ -1,0 +1,10 @@
+{
+  "name": "sliderule-measure",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Offline helpers to measure graduations from the prototype photographs",
+  "type": "commonjs",
+  "dependencies": {
+    "jpeg-js": "^0.4.4"
+  }
+}

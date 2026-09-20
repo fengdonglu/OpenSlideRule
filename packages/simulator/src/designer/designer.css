@@ -1,0 +1,131 @@
+/* Shared chrome for the rule designer. The panels are separate components, so
+   these structural classes live in one plain stylesheet instead of being
+   duplicated in scoped <style> blocks. Every class is designer-specific. */
+
+.designer-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid var(--ui-border);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.designer-panel-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ui-text);
+  text-align: center;
+}
+
+.designer-subtitle {
+  margin: 6px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ui-text);
+}
+
+.designer-subgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* One field row: label on the left, a content-sized control cluster on the
+   right. Numeric inputs are only as wide as the value needs. */
+.designer-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 22px;
+  font-size: 12px;
+  color: var(--ui-text);
+}
+
+.designer-field > :first-child {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.designer-field input,
+.designer-field select {
+  box-sizing: border-box;
+}
+
+.designer-field input[type='number'] {
+  width: 8ch;
+  text-align: right;
+}
+
+/* Row counts are one or two digits, so they need even less. */
+.designer-field input[type='number'].di-sm {
+  width: 5ch;
+}
+
+/* Hide the native spinners: they steal width from these narrow fields. */
+.designer-field input[type='number']::-webkit-outer-spin-button,
+.designer-field input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.designer-field input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.designer-field input[type='text'] {
+  width: 18ch;
+}
+
+.designer-field select {
+  width: auto;
+  max-width: 16ch;
+}
+
+/* A number field with its unit immediately after the input. */
+.designer-input-unit {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.designer-input-unit em {
+  font-style: normal;
+  font-size: 11px;
+  color: var(--ui-text-muted);
+}
+
+/* A checkbox row keeps its checkbox content-sized. */
+.designer-field-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.designer-field-check input[type='checkbox'] {
+  width: auto;
+}
+
+.is-error {
+  outline: 1px solid #dc2626;
+}
+
+/* Compact red "remove" button for list rows, so actions never crowd out the
+   row's own content. */
+.designer-remove {
+  flex: 0 0 auto;
+  padding: 0 6px;
+  min-width: 22px;
+  line-height: 20px;
+  text-align: center;
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.designer-remove:hover:not(:disabled) {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
