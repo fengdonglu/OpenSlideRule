@@ -354,7 +354,7 @@ x 位置与长度（1 px 分辨率）。x 位置用该标尺自身的映射
    - [Slide rule](https://en.wikipedia.org/wiki/Slide_rule)
    - [Slide rule scale](https://en.wikipedia.org/wiki/Slide_rule_scale)
 
-文档标准见 [../README.md](../README.md)，全尺寸计算尺见
+文档标准见 [../README-cn.md](../README-cn.md)，全尺寸计算尺见
 [model-1002.md](model-1002.md)。
 
 ---

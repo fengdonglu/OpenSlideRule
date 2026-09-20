@@ -85,6 +85,19 @@ and the [1002 model](docs/domain/model-1002.md); the
 [documentation index](docs/README.md) lists everything. Developers should start
 with [docs/dev/](docs/dev/) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## How this was built
+
+This project was developed by **vibe coding**: nearly all of the code was
+written in AI-assisted, prompt-driven sessions, with a human directing the work,
+checking the results and curating the data. The measured rule data and the domain
+notes were verified against the prototype photographs, but the codebase as a
+whole has not had the sustained human review a project of this size would
+normally receive.
+
+If you contribute to or reuse this project, please keep that in mind: read the
+code before trusting it, run the tests, and expect rough edges. Corrections and
+hardening are welcome.
+
 ## Licence
 
 GNU General Public License v3.0 - see [LICENSE](LICENSE).

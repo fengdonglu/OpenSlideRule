@@ -174,6 +174,9 @@ scale that are not its calculation:
 
 The **Calculation** panel controls how the selected scale is graduated and read.
 Every field here belongs to the scale's calculation, not to the scale itself.
+A hands-on version of everything below, with one worked example and a figure per
+mapping kind, is in
+[Designer calculations, by example](designer-calculations.md).
 
 - **Seed from a preset** - replace the whole calculation with a coarse one for
   the chosen mapping kind: **log**, **linear**, **fn**, **valueFn** or **expr**.

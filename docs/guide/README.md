@@ -17,6 +17,7 @@ page as `<name>-cn.md`.
 | [Getting started](getting-started.md) | What the app is, how to run it, the layout of the screen, and a first walkthrough. |
 | [Simulator](simulator.md) | Choosing a model, faces, dragging the slide, zoom, cursors, the readings panel, hover read-outs, circular rules, themes and language. |
 | [Designer](designer.md) | Opening the designer, the Rule and Layout panels, per-scale fields, the calculation editor, the live preview and validation, and exporting a draft or a finished rule. |
+| [Designer calculations, by example](designer-calculations.md) | A worked example of every mapping kind - log, folded log, linear, fn, valueFn and expr - plus intervals and steps, labels, marks and notes, and shared calculations. |
 | [Import and export](import-export.md) | Loading a rule JSON, the error dialog, and exporting PNG, SVG, Markdown or a 1:1 print / PDF. |
 | [Reading scales](reading-scales.md) | How the app turns a pointer or cursor position into readings, and how that relates to the printed scales. |
 

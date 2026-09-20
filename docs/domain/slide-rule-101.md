@@ -156,7 +156,28 @@ other.
 
 ---
 
-## 7. Historical note
+## 7. The rules in this project
+
+The two models documented here are both of **Chinese manufacture**, and each is
+representative of its class: the **1002** is a **desktop** rule, and the
+**Type 57** a **pocket** rule. Their designs started from the equivalent models
+of the large foreign makers of the day, but the Chinese refinements made them at
+least the equal of their foreign counterparts - in layout, in the set of scales
+and, by the maintainer's assessment, in workmanship. They serve here as the
+project's reference prototypes: a full-size rule and a pocket rule, the two
+shapes a slide rule takes in practice.
+
+- **1002** - desktop, double-sided, vector log-log; see
+  [model-1002.md](model-1002.md).
+- **57** - pocket, single-sided; see [model-57.md](model-57.md).
+
+*This note records the maintainer's account of the two prototypes; it is not
+derived from the prototype photographs or Wikipedia, which remain the sources
+for the physical facts elsewhere in these pages.*
+
+---
+
+## 8. Historical note
 
 Invented in the 17th century, the slide rule was the everyday tool of engineers,
 scientists and aviators until electronic calculators appeared in the 1970s. It
@@ -164,7 +185,7 @@ remains valuable as a teaching tool and as a historical artefact.
 
 ---
 
-## 8. References
+## 9. References
 
 - Wikipedia, "Slide rule" - <https://en.wikipedia.org/wiki/Slide_rule>
 - Wikipedia, "Slide rule scale" - <https://en.wikipedia.org/wiki/Slide_rule_scale>
@@ -175,8 +196,7 @@ and the P scale of `sqrt(1-x^2)`).
 
 ---
 
-*Version: v1.3*
+*Version: v1.4*
 *Created: 2025-01*
-*Last revised: 2026-09 - C/D as the reference scales; scale roles and
-importance*
+*Last revised: 2026-09 - the Chinese rules in this project (section 7)*
 *English translation: 2026-09*

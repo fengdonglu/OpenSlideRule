@@ -45,4 +45,4 @@ C/D 十进单位分度，可能伸到 C/D 两端之外，进入左栏或右侧�
   [读数精度](../domain/slide-rule-101.md#4-reading-accuracy)。
 
 关于每个尺面出现哪些标尺及其位置，见[1002 型号](../domain/model-1002.md#3-scales)
-中的标尺分布；[术语表](../glossary.md)定义了此处使用的术语。
+中的标尺分布；[术语表](../glossary-cn.md)定义了此处使用的术语。

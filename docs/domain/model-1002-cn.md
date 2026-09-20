@@ -388,7 +388,7 @@ p = log10(f(x) / a) = log10(f(x)) - log10(a)
    - [Slide rule scale](https://en.wikipedia.org/wiki/Slide_rule_scale)
 
 本文档中的每一条事实都必须可追溯到这两个来源之一。照片不清楚之处，该事实会被
-标记为尚未建立，而不是猜测。完整规则见 [../README.md](../README.md)。
+标记为尚未建立，而不是猜测。完整规则见 [../README-cn.md](../README-cn.md)。
 
 ---
 

@@ -5,6 +5,28 @@ All notable changes to this project are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] - 2026-09-20
+
+A documentation and tooling patch over 0.1.0.
+
+### Added
+
+- A user-guide page,
+  [Designer calculations, by example](docs/guide/designer-calculations.md), with
+  a worked example and a figure for every mapping kind (`log`, folded `log`,
+  `linear`, `fn`, `valueFn`, `expr`), plus intervals and steps, labels, marks and
+  notes, and shared calculations - and its Simplified-Chinese mirror.
+
+### Changed
+
+- The static document title and description now read `OpenSlideRule`; the page
+  title had still been the model name until the app loaded.
+- CI and Pages use the current Node 24 majors of the GitHub Actions:
+  `checkout@v7`, `setup-node@v7`, `cache@v6`, `upload-artifact@v7`,
+  `configure-pages@v6`, `upload-pages-artifact@v5` and `deploy-pages@v5`.
+- The Simplified-Chinese user-guide index and its cross-links now point at the
+  Chinese mirrors rather than the English pages.
+
 ## [0.1.0] - 2026-09-20
 
 The first public release: a web simulator and visual authoring tool for slide
@@ -58,4 +80,5 @@ Type 57 pocket rule, and can load or design any rule described by a
 - Vitest unit and component tests and a Playwright E2E suite (simulator,
   designer, rule import, circular), both run in CI, with ESLint and Prettier.
 
+[0.1.1]: https://github.com/fengdonglu/OpenSlideRule/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/fengdonglu/OpenSlideRule/releases/tag/v0.1.0
